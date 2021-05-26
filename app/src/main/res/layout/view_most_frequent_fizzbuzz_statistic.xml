@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="32dp">
+
+        <TextView
+            android:id="@+id/fizzTitle"
+            style="@style/LargeBlackLobster"
+            android:text="@string/statistic_view_fizz_title" />
+
+        <TextView
+            android:id="@+id/fizzWordLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/fizzTitle"
+            android:layout_marginTop="16dp"
+            android:text="@string/statistic_view_word_label"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@android:color/black" />
+
+        <TextView
+            android:id="@+id/fizzWordContent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/fizzWordLabel"
+            android:layout_alignEnd="@id/limitValueContent"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@android:color/black"
+            android:textStyle="bold"
+            tools:text="Hello" />
+
+        <TextView
+            android:id="@+id/fizzValueLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/fizzWordLabel"
+            android:layout_marginTop="16dp"
+            android:text="@string/statistic_view_value_label"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@android:color/black" />
+
+        <TextView
+            android:id="@+id/fizzValueContent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/fizzValueLabel"
+            android:layout_alignEnd="@id/limitValueContent"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@android:color/black"
+            android:textStyle="bold"
+            tools:text="8" />
+
+        <TextView
+            android:id="@+id/buzzTitle"
+            style="@style/LargeBlackLobster"
+            android:layout_below="@id/fizzValueLabel"
+            android:layout_marginTop="48dp"
+            android:text="@string/statistic_view_buzz_title" />
+
+        <TextView
+            android:id="@+id/buzzWordLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/buzzTitle"
+            android:layout_marginTop="16dp"
+            android:text="@string/statistic_view_word_label"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@android:color/black" />
+
+        <TextView
+            android:id="@+id/buzzWordContent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/buzzWordLabel"
+            android:layout_alignEnd="@id/limitValueContent"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@android:color/black"
+            android:textStyle="bold"
+            tools:text="There" />
+
+        <TextView
+            android:id="@+id/buzzValueLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/buzzWordLabel"
+            android:layout_marginTop="16dp"
+            android:text="@string/statistic_view_value_label"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@android:color/black" />
+
+        <TextView
+            android:id="@+id/buzzValueContent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/buzzValueLabel"
+            android:layout_alignEnd="@id/limitValueContent"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@android:color/black"
+            android:textStyle="bold"
+            tools:text="12" />
+
+
+        <TextView
+            android:id="@+id/limitValueLabel"
+            style="@style/LargeBlackLobster"
+            android:layout_below="@id/buzzValueLabel"
+            android:layout_marginTop="48dp"
+            android:text="@string/statistic_view_limit_title" />
+
+        <TextView
+            android:id="@+id/limitValueContent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/limitValueLabel"
+            android:layout_alignBottom="@id/limitValueLabel"
+            android:layout_marginLeft="72dp"
+            android:layout_toEndOf="@id/limitValueLabel"
+            android:gravity="center"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@android:color/black"
+            android:textStyle="bold"
+            tools:text="100" />
+
+        <TextView
+            android:id="@+id/hitsValueLabel"
+            style="@style/LargeBlackLobster"
+            android:layout_below="@id/limitValueLabel"
+            android:layout_marginTop="48dp"
+            android:text="@string/statistic_view_hits_count_title" />
+
+        <TextView
+            android:id="@+id/hitsValueContent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/hitsValueLabel"
+            android:layout_alignEnd="@id/limitValueContent"
+            android:layout_alignBottom="@id/hitsValueLabel"
+            android:gravity="center"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@android:color/black"
+            android:textStyle="bold"
+            tools:text="100" />
+
+    </RelativeLayout>
+</merge>

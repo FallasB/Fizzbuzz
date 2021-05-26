@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">FizzBuzz</string>
+
+    <string name="create_form_fizz_title">First, tell me about your fizz:</string>
+    <string name="create_form_buzz_title">Then, let\'s talk about your buzz:</string>
+    <string name="create_form_limit_title">Finally, how many values do you need?</string>
+
+    <string name="fizz_buzz_title">Fizz\nBuzz</string>
+    <string name="main_screen_create_hint">Let\'s create a</string>
+    <string name="show_fizzbuzz_title">Here\'s your FizzBuzz:</string>
+
+    <string name="create_form_word_hint">Type a word</string>
+    <string name="create_form_value_hint">Type a value</string>
+
+    <string name="statistic_view_fizz_title">Fizz</string>
+    <string name="statistic_view_word_label">Word:</string>
+    <string name="statistic_view_value_label">Value:</string>
+    <string name="statistic_view_buzz_title">Buzz</string>
+    <string name="statistic_view_limit_title">Limit</string>
+    <string name="statistic_view_hits_count_title">Hits count</string>
+
+    <string name="most_frequent_screen_title">Most frequent fizzbuzz</string>
+    <string name="most_frequent_button_label">Most frequent fizzbuzz</string>
+</resources>

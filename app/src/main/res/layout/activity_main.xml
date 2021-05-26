@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipChildren="false"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/hintLabel"
+        style="@style/LargeLobster"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/buttonLayout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="32dp"
+        android:text="@string/main_screen_create_hint" />
+
+    <View
+        android:id="@+id/buttonLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@id/buttonText"
+        android:layout_alignTop="@id/buttonText"
+        android:layout_alignEnd="@id/buttonText"
+        android:layout_alignBottom="@id/buttonText"
+        android:background="@drawable/main_screen_button_round_shape"
+        android:foreground="?selectableItemBackgroundBorderless" />
+
+    <TextView
+        android:id="@+id/buttonText"
+        style="@style/LargeLobster"
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:text="@string/fizz_buzz_title"
+        android:textColor="@android:color/white"
+        android:textSize="48sp" />
+
+    <com.flb.fizzbuzz.views.MostFrequentFizzbuzzButton
+        android:id="@+id/mostFrequentButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="24dp"
+        android:foreground="?selectableItemBackground"
+        android:visibility="gone"
+        app:cardBackgroundColor="@color/purple_100"
+        app:cardCornerRadius="16dp"
+        app:contentPadding="8dp" />
+
+</RelativeLayout>
